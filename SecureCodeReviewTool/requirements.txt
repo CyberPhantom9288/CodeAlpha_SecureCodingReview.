@@ -1,0 +1,2 @@
+# No external dependencies required
+# Runs with Python 3.x built-in libraries
