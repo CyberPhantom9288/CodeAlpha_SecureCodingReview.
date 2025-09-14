@@ -1,21 +1,19 @@
-# 🕵‍♂ CodeAlpha_NetworkPacketSniffer
+# 🔐 CodeAlpha_SecureCodingReview
 
-A *network packet sniffer* built in Python using *Scapy* for my CodeAlpha Internship.  
-This project captures live network traffic, analyzes packet structure, and displays key details like *source/destination IPs, protocols, ports, and payloads*.
+A **Secure Coding Review Tool** built in Python for my CodeAlpha Internship.  
+This tool scans Python source code, detects insecure coding patterns, and provides remediation suggestions based on secure coding practices.
 
 ---
 
 ## 🚀 Features
-- Capture *real-time network packets*
-- Analyze:
-  - *Ethernet Layer* → MAC addresses
-  - *IP Layer* → Source/Destination IPs, TTL, Protocol
-  - *Transport Layer* → TCP/UDP/ICMP details
-- Extract and display *payload data*
-- Protocol-based *packet filtering*
-- Educational tool to understand *how data flows through a network*
-
----
+- Detects **common security issues** such as:
+  - Hardcoded credentials
+  - Insecure function usage (e.g., `eval`)
+  - Missing input validation
+  - Poor exception handling
+- Generates a **security report**
+- Example vulnerable & safe code included for testing
+- Simple, extensible codebase (add your own rules in `tool/analyzer.py`)
 
 ---
 
@@ -23,7 +21,7 @@ This project captures live network traffic, analyzes packet structure, and displ
 
 1. Clone this repository:
    ```
-   git clone https://github.com/CyberPhantom9288/CodeAlpha_NetworkPacketSniffer.git
+   git clone https://github.com/CyberPhantom9288/CodeAlpha_SecureCodingReview.git
    cd CodeAlpha_NetworkPacketSniffer
     pip install -r requirements.txt
    python3 main.py
